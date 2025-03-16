@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 
 // ニュース記事の型定義
 interface NewsItem {
@@ -238,12 +238,12 @@ export default function NewsPage() {
                       </h2>
                       <p className="text-gray-700">{item.summary}</p>
                       <div className="mt-4">
-                        <Link
+                        {/* <Link
                           href={`/news/${item.id}`}
                           className="text-blue-600 hover:text-blue-800 font-medium text-sm"
                         >
                           詳細を見る →
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>
