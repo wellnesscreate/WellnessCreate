@@ -29,6 +29,17 @@ const categoryColors: Record<string, string> = {
   service: "bg-orange-100 text-orange-800",
 };
 
+// 日付をフォーマットする関数
+const formatDate = (dateString: string): string => {
+  // ISO形式の日付文字列かどうかをチェック
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/.test(dateString)) {
+    const date = new Date(dateString);
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+  }
+  // すでに適切な形式の場合はそのまま返す
+  return dateString;
+};
+
 // GAS APIのURL
 // 注意: Google Apps Scriptの設定で以下が必要です
 // 1. appsscript.jsonで "executeAs": "USER_DEPLOYING" と "access": "ANYONE" を設定
@@ -106,7 +117,7 @@ export default function NewsPage() {
         id: 1,
         category: "press-release",
         title: "株式会社WellnessCreate設立のお知らせ",
-        date: "2024年9月6日",
+        date: "2024-09-06T00:00:00.000Z",
         summary:
           "株式会社WellnessCreateを設立いたしました。「Life style」に「Wellness」を浸透させることをビジョンに掲げ、スポーツメディア事業を展開してまいります。",
         content:
@@ -116,7 +127,7 @@ export default function NewsPage() {
         id: 2,
         category: "media",
         title: "株式会社CANLIFEと代理店契約を締結",
-        date: "2025年2月1日",
+        date: "2025-02-01T00:00:00.000Z",
         summary:
           "株式会社CANLIFEと代理店契約を締結いたしました。今後、両社の強みを活かしたサービス展開を予定しています。",
         content:
@@ -126,7 +137,7 @@ export default function NewsPage() {
         id: 3,
         category: "event",
         title: "スポーツイベント開催のお知らせ",
-        date: "2025年4月15日",
+        date: "2025-04-15T00:00:00.000Z",
         summary:
           "東京都内にてスポーツイベントを開催いたします。詳細は後日発表いたします。",
         content:
@@ -136,7 +147,7 @@ export default function NewsPage() {
         id: 4,
         category: "service",
         title: "ウェブサイトリニューアルのお知らせ",
-        date: "2025年3月16日",
+        date: "2025-03-16T00:00:00.000Z",
         summary:
           "当社ウェブサイトをリニューアルいたしました。今後もコンテンツの充実を図ってまいります。",
         content:
@@ -160,7 +171,7 @@ export default function NewsPage() {
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">ニュース</h1>
           <p className="text-gray-600 mb-12">
-            株式会社WellnessCreateからの最新情報をお届けします
+            株式会社WellnessCreateからの最新情報をお届けします。
           </p>
 
           {/* カテゴリーフィルター */}
@@ -230,7 +241,7 @@ export default function NewsPage() {
                           {categoryLabels[item.category]}
                         </span>
                         <span className="text-gray-500 text-sm ml-4">
-                          {item.date}
+                          {formatDate(item.date)}
                         </span>
                       </div>
                       <h2 className="text-xl font-bold text-gray-900 mb-3">

@@ -25,16 +25,6 @@ export default function AboutPage() {
                 すべての人が健康で幸せな生活を送れる社会の創造を目指しています。
               </p>
             </div>
-            <div>
-              <h3 className="text-2xl font-bold text-green-600 mb-4">
-                ミッション
-              </h3>
-              <p className="text-lg text-gray-600 mb-6">現在策定中</p>
-              <p className="text-gray-600">
-                私たちは現在、明確なミッションステートメントを策定中です。
-                今後の事業展開とともに、私たちの使命をより具体的に定義していきます。
-              </p>
-            </div>
           </div>
         </div>
 
@@ -215,7 +205,7 @@ export default function AboutPage() {
                   株式会社CANLIFE
                 </h3>
                 <p className="text-gray-600 mb-4 text-center md:text-left">
-                  健康関連商品・サービスを提供する企業との代理店契約を締結し、
+                  健康関連商品を提供する企業との代理店契約を締結し、
                   お客様に最適な健康ソリューションをお届けしています。
                 </p>
                 <div className="text-center md:text-left">

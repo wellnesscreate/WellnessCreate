@@ -148,8 +148,6 @@ export default function ContactPage() {
                         required
                       >
                         <option value="general">一般的なお問い合わせ</option>
-                        <option value="service">サービスについて</option>
-                        <option value="membership">会員について</option>
                         <option value="media">取材・メディア掲載</option>
                         <option value="business">業務提携・協業</option>
                       </select>
