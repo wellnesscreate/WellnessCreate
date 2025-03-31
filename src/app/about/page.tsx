@@ -122,13 +122,13 @@ export default function AboutPage() {
               <div className="absolute w-4 h-4 bg-green-500 rounded-full -left-2 top-0"></div>
               <div className="mb-4">
                 <span className="text-lg font-bold text-green-600">
-                  2025年2月
+                  2025年3月
                 </span>
                 <h3 className="text-xl font-bold text-gray-800 mt-1">
-                  代理店契約締結
+                  パートナーシップ契約
                 </h3>
                 <p className="text-gray-600 mt-2">
-                  株式会社CANLIFEと代理店契約を締結。
+                  株式会社CANLIFEとのパートナーシップ契約を締結。
                 </p>
               </div>
             </div>
@@ -205,14 +205,10 @@ export default function AboutPage() {
                   株式会社CANLIFE
                 </h3>
                 <p className="text-gray-600 mb-4 text-center md:text-left">
-                  健康関連商品を提供する企業との代理店契約を締結し、
+                  スポーツメディア事業、ならびに健康関連商品・サービスを提供する企業とのパートナーシップ契約を締結。
+                  <br />
                   お客様に最適な健康ソリューションをお届けしています。
                 </p>
-                <div className="text-center md:text-left">
-                  <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
-                    代理店
-                  </span>
-                </div>
               </div>
             </div>
           </div>
