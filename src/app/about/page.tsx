@@ -90,7 +90,7 @@ export default function AboutPage() {
                     <td className="py-4 text-gray-800">
                       ・スポーツメディア事業
                       <br />
-                      ・代理店
+                      ・販売代理店事業
                     </td>
                   </tr>
                 </tbody>
