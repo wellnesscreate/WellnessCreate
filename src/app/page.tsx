@@ -75,7 +75,7 @@ export default function Home() {
                 スポーツメディア事業
               </h3>
               <p className="text-gray-600 text-center">
-                マイナースポーツ関する情報を発信するメディア運営を行っています。
+                マイナースポーツに関する情報を発信するメディア運営を行っています。
                 マイナースポーツ以外にも健康情報を提供し、人々の健康的な生活もサポートします。
               </p>
             </div>
@@ -98,10 +98,10 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-center mb-4 text-gray-800">
-                代理店事業
+                販売代理店事業
               </h3>
               <p className="text-gray-600 text-center">
-                健康関連商品の代理店として、厳選された商品を提供しています。
+                健康関連商品の販売代理店として、厳選された商品を提供しています。
                 ウェルネスに関連した商品をご提案します。
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function Home() {
                       <td className="py-4 text-gray-800">
                         ・スポーツメディア事業
                         <br />
-                        ・代理店
+                        ・販売代理店事業
                       </td>
                     </tr>
                     <tr className="border-b border-gray-200">
