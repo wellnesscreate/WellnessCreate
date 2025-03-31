@@ -48,7 +48,7 @@ export default function ContactPage() {
     try {
       // Google Apps ScriptのAPIエンドポイント
       const apiUrl =
-        "https://script.google.com/macros/s/AKfycbxKLfj-6QA1NoG6L4jFLGvke_unQEjdNIrYRAAe6H2945xHer2WJK-JUjWqkX1h54iv/exec";
+        "https://script.google.com/macros/s/AKfycbx2tPCKE758CPZ86prihsC56mQWUdkjkp14o2yu0p4Z7ZkVyPxB2hGiaH0xvRo_Y5Pcmw/exec";
 
       // no-corsモードではレスポンスの内容を読み取れないため、
       // fetchのみを実行し、成功したと仮定して処理を続行
