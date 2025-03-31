@@ -34,7 +34,10 @@ const formatDate = (dateString: string): string => {
   // ISO形式の日付文字列かどうかをチェック
   if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/.test(dateString)) {
     const date = new Date(dateString);
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(
+      2,
+      "0"
+    )}-${String(date.getDate()).padStart(2, "0")}`;
   }
   // すでに適切な形式の場合はそのまま返す
   return dateString;
@@ -54,7 +57,7 @@ const formatDate = (dateString: string): string => {
 //      return output;
 //    }
 const API_URL =
-  "https://script.google.com/macros/s/AKfycbz9B-kHNoiypf60UVJNfsksNlzkn34xhqvzJG3dggh58NOevg1G0UukDlT_Usg5yKy6/exec";
+  "https://script.google.com/macros/s/AKfycby20ZCiGwxDTXMkPZTt4FDkuLaQL6ybVC6dS4EQ_Na7m4mPrsVwfHSmBU52ARKzWM7o1A/exec";
 
 export default function NewsPage() {
   const [newsItems, setNewsItems] = useState<NewsItem[]>([]);
